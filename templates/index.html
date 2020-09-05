@@ -1,0 +1,14 @@
+{%  extends 'register.html' %}
+{% block content %}
+
+<h1>Hola {{access}}</h1>
+
+<div class="col-md-4">
+    <form method="POST" action="/login" class="card card-body">
+        <a class="dropdown-item" href="{{url_for('salir')}}">
+            Cerrar sesión 
+        </a>
+    </form>
+</div>
+
+{% endblock %} 
